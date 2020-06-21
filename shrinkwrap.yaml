@@ -1,5 +1,6 @@
 dependencies:
   discord.js: 12.2.0
+  lowdb: 1.0.0
 packages:
   /@discordjs/collection/0.1.5:
     dev: false
@@ -69,6 +70,30 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+  /graceful-fs/4.2.4:
+    dev: false
+    resolution:
+      integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
+  /is-promise/2.2.2:
+    dev: false
+    resolution:
+      integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==
+  /lodash/4.17.15:
+    dev: false
+    resolution:
+      integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /lowdb/1.0.0:
+    dependencies:
+      graceful-fs: 4.2.4
+      is-promise: 2.2.2
+      lodash: 4.17.15
+      pify: 3.0.0
+      steno: 0.4.4
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-2+x8esE/Wb9SQ1F9IHaYWfsC9FIecLOPrK4g17FGEayjUWH172H6nwicRovGvSE2CPZouc2MCIqCI7h9d+GftQ==
   /mime-db/1.44.0:
     dev: false
     engines:
@@ -89,6 +114,12 @@ packages:
       node: 4.x || >=6.0.0
     resolution:
       integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  /pify/3.0.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
   /prism-media/1.2.2:
     dev: false
     peerDependencies:
@@ -102,6 +133,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
+  /steno/0.4.4:
+    dependencies:
+      graceful-fs: 4.2.4
+    dev: false
+    resolution:
+      integrity: sha1-BxEFvfwobmYVwEA8J+nXtdy4Vcs=
   /tweetnacl/1.0.3:
     dev: false
     resolution:
@@ -120,3 +157,4 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   discord.js: ^12.2.0
+  lowdb: ^1.0.0
