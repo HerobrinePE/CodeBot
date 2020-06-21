@@ -48,7 +48,7 @@ function manageRoles(message,client,config) {
 
     // Firstly, EMOJI_MAP is a Dictionary<String,String>, with the emoji
     // as the keys and the role names as the values.
-    const EMOJI_MAP = require(`./maps/${config.mapname}.json`);
+    const EMOJI_MAP = require(`../json/maps/${config.mapname}.json`);
 
     console.log("emojimap:",EMOJI_MAP);
 
